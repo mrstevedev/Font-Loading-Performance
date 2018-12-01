@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Font Loading Performance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" as="font" href="fonts/HelveticaNeueMedium.woff2" type="font/woff2" crossorigin />
+    <link rel="preload" as="font" href="fonts/HelveticaNeueBold_1.woff2" type="font/woff2" crossorigin />
+    <style>
+        
+        @font-face {
+            font-family: 'HelveticaNeue';
+            src: url('fonts/HelveticaNeueMedium.eot');
+            src: url('fonts/HelveticaNeueMedium.eot?#iefix') format('embedded-opentype'),
+                 url('fonts/HelveticaNeueMedium.woff2') format('woff2'),
+                 url('fonts/HelveticaNeueMedium.woff') format('woff'),
+                 url('fonts/HelveticaNeueMedium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-family: 'HelveticaNeue';
+            font-weight: 500;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        .container {
+           padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .cover-photo {
+            height: 200px;
+            overflow: hidden;
+            background: url(images/bg.jpg) center center;
+            background-size: cover;
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h2>Welcome to San Diego</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus molestias nihil incidunt obcaecati doloribus iste optio error nulla enim tenetur ex dolorem, repellendus aliquid unde ratione pariatur omnis corrupti laborum nesciunt! Aut dicta animi sed veniam? Earum dolorem atque tempore deleniti perferendis vitae natus ratione nemo distinctio autem accusantium nostrum esse impedit consequatur tenetur, eius architecto libero blanditiis. Omnis iure cum totam fugiat! Enim quod ab rem, animi, eum ipsam quam recusandae nostrum aliquam, fuga nam odio temporibus ad. Atque.</p>
+        </div>
+    </div>
+
+            <div class="cover-photo"></div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
